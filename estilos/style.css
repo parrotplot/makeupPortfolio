@@ -1,0 +1,256 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+
+}
+body {
+    font-family: "Courier New", Courier, monospace;
+    min-width: min-content;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+/* mobile */
+.navBar {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+}
+/* tablet */
+@media (min-width: 769px) {
+    .navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+}
+/* mobile */
+.menu {
+    font-size: smaller;
+    margin-top: 10px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+/* tablet */
+@media (min-width: 481px){
+    .menu{
+        font-size: medium;
+        width: 100%;
+        justify-content: space-around;
+        
+    }
+}
+@media (min-width: 769px){
+    .menu{
+        font-size: large;
+        width: 400px;
+    }
+}
+/* desktop */
+@media (min-width: 1025px){
+    .menu{
+        font-size: larger;
+        width: 500px;
+    }
+}
+
+/* mobile */
+.logo .name {
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+/* tablet */
+@media (min-width: 769px){
+    .logo .name {
+        font-size: xx-large;
+    }
+}
+/* mobile */
+.logo .artist {
+    font-size: medium;
+    text-align: center;
+}
+/* tablet */
+@media (min-width: 769px){
+    .logo .artist {
+        font-size: larger;
+    }
+}
+
+/* mobile */
+header {
+    background-image: url(../imagenes/hero1edit.jpg);
+    background-size: cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    font-size: small;
+}
+/* tablet */
+@media (min-width: 769px){
+    header {
+        height: 600px;
+        font-size: medium;
+    }
+}
+
+/* mobile */
+.slogan{
+    /* outline: solid; */
+    margin-top: 15%;
+    margin-left: 1em;
+    width: 50%;
+    font-size: smaller;
+}
+/* tablet */
+@media (min-width: 481px){
+    .slogan{
+        font-size: small;
+    }
+}
+@media (min-width: 769px){
+    .slogan{
+        font-size: medium;
+    }
+}
+/* desktop */
+@media (min-width: 1025px){
+    .slogan{
+        width: 40%;
+        font-size: larger;
+    }
+}
+
+/* @media (min-width: 769px){
+    .slogan{
+        width: 50%;
+        font-size: large;
+    }
+} */
+
+/* mobile */
+.container {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: small;
+}
+@media (min-width: 769px){
+    .container {
+        font-size: medium;
+    }
+}
+@media (min-width: 1025px){
+    .container {
+        font-size: large;
+    }
+}
+
+
+/* mobile */
+.footerMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* mobile */
+.footer-contact{
+    text-align: end;
+}
+/* tablet */
+@media (min-width: 769px){
+    .footer-contact {
+        text-align: center;
+    }
+}
+/* button{
+    margin: 1em 0 0 1em;
+    width: 30%;
+    font-family: "Courier New", Courier, monospace;
+    background-color: tomato
+    
+}
+@media (min-width: 769px){
+    button {
+    height: 30px;
+    width: 25%;
+    font-family: "Courier New", Courier, monospace;
+    margin: 2em;
+    background-color: tomato;    
+    }
+} */
+
+
+/* About Styling */
+
+/* mobile */
+.aboutMe{
+    padding: 1em;
+}
+/* tablet */
+@media (min-width: 481px){
+    .aboutMe{
+        padding: 0%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 0px;
+    }
+}
+@media (min-width: 481px) {
+    .patoPic{
+        padding: 4em 1em 4em 2em;
+        display: flex;
+    }
+}
+@media (min-width: 769px) {
+    .patoPic{
+        padding: 2em 1em 2em 2em;
+        display: flex;
+    }
+}
+.info{ 
+    text-align: center;
+    margin-top: 1em;
+}
+/* desktop */
+@media (min-width: 1025px){
+    .info{
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+}
+
+/* Work Styling */
+
+.grid-container-gallery{
+    padding: 2em;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 96%;
+    grid-gap: 1em;
+    overflow-x: auto;
+
+}
+
+.grid-container-gallery{
+    background: whitesmoke;
+}
+
+.grid-gallery-item > img{
+    inline-size: 100%;
+    object-fit: cover;
+
+}
