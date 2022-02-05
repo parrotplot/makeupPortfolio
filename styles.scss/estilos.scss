@@ -11,19 +11,27 @@ img{
     display: block;
 }
 
-ul{
-    list-style: none;
-}
-ul a{
-    text-decoration: none;
-    color: whitesmoke;
-}
 
 /* mobile */
 .navBar {
     background-color: black;
     color: whitesmoke;
     padding: 20px;
+    .menu {
+        font-size: smaller;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        ul{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: whitesmoke;
+            }
+        }
+    }
+    
 }
 /* tablet */
 @media (min-width: 769px) {
@@ -32,15 +40,6 @@ ul a{
     justify-content: space-between;
     align-items: center;
     }
-}
-/* mobile */
-.menu {
-    font-size: smaller;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    /* text-decoration: none; */
-    list-style: none;
 }
 
 
@@ -68,10 +67,12 @@ ul a{
 }
 
 /* mobile */
-.logo .name{
+.logo{ 
+    .name{
     font-size: x-large;
     display: flex;
     justify-content: center;
+    }
 }
 /* tablet */
 @media (min-width: 769px){
@@ -80,9 +81,11 @@ ul a{
     }
 }
 /* mobile */
-.logo .artist {
-    font-size: medium;
-    text-align: center;
+.logo{ 
+    .artist {
+        font-size: medium;
+        text-align: center;
+    }
 }
 /* tablet */
 @media (min-width: 769px){
@@ -151,7 +154,14 @@ header {
     color: whitesmoke;
     padding: 20px;
     font-size: small;
-
+    .footerMenu{
+        display: flex;
+    justify-content: space-between;
+        .footerMenu{
+            text-align: end;
+        }
+    }
+    
 }
 @media (min-width: 769px){
     .container {
@@ -164,17 +174,6 @@ header {
     }
 }
 
-
-/* mobile */
-.footerMenu {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* mobile */
-.footer-contact{
-    text-align: end;
-}
 /* tablet */
 @media (min-width: 769px){
     .footer-contact {
