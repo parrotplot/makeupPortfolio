@@ -1,9 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    text-decoration: none;
-    list-style: none;
-
 }
 body {
     font-family: "Courier New", Courier, monospace;
@@ -12,6 +9,14 @@ body {
 img{
     width: 100%;
     display: block;
+}
+
+ul{
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 /* mobile */
@@ -32,10 +37,13 @@ img{
 .menu {
     font-size: smaller;
     margin-top: 10px;
-    color: whitesmoke;
     display: flex;
     justify-content: space-between;
+    /* text-decoration: none; */
+    list-style: none;
 }
+
+
 /* tablet */
 @media (min-width: 481px){
     .menu{
@@ -60,7 +68,7 @@ img{
 }
 
 /* mobile */
-.logo .name {
+.logo .name{
     font-size: x-large;
     display: flex;
     justify-content: center;
@@ -143,6 +151,7 @@ header {
     color: whitesmoke;
     padding: 20px;
     font-size: small;
+
 }
 @media (min-width: 769px){
     .container {
@@ -188,6 +197,8 @@ header {
     background-color: tomato;    
     }
 } */
+
+
 
 
 /* About Styling */
@@ -266,17 +277,19 @@ header {
 
 /* desktop */
 @media(min-width: 1025px){
-    .grid-container-gallery{
+    .grid-container-gallery:hover{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 1em;
+        
     }
 }
 
-.grid-gallery-element img{
-    inline-size: 100%;
-    object-fit: cover;
+.grid-gallery-element{
+    
+    
+    /* inline-size: 100%;
+    object-fit: cover; */
     /* max-width: 245px;  
     max-height: 368px; */
-
 }
