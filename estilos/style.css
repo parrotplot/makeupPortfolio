@@ -85,7 +85,7 @@ img{
 
 /* mobile */
 header {
-    background-image: url(../imagenes/hero1edit.jpg);
+    background-image: url(../imagenes/hero1.jpg);
     background-size: cover;
     height: 400px;
     color: white;
@@ -207,10 +207,13 @@ header {
         grid-row-gap: 0px;
     }
 }
+/* tablet */
 @media (min-width: 481px) {
     .patoPic{
-        padding: 4em 1em 4em 2em;
         display: flex;
+        padding: 2em 1em 2em 2em;
+        max-width: 448px;
+        max-height: 620px;
     }
 }
 @media (min-width: 769px) {
@@ -219,12 +222,19 @@ header {
         display: flex;
     }
 }
+/* desktop */
+@media (min-width: 1025px) {
+    .patoPic{
+        max-width: 460px;
+        max-height: 690px;
+    }
+}
 .info{ 
     text-align: center;
     margin-top: 1em;
 }
 /* desktop */
-@media (min-width: 1025px){
+@media (min-width: 769px){
     .info{
     font-size: larger;
     display: flex;
@@ -242,15 +252,31 @@ header {
     grid-auto-columns: 96%;
     grid-gap: 1em;
     overflow-x: auto;
-
-}
-
-.grid-container-gallery{
     background: whitesmoke;
 }
 
-.grid-gallery-item > img{
+/* tablet */
+@media(min-width: 700px){
+    .grid-container-gallery{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1em;
+    }
+}
+
+/* desktop */
+@media(min-width: 1025px){
+    .grid-container-gallery{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1em;
+    }
+}
+
+.grid-gallery-element img{
     inline-size: 100%;
     object-fit: cover;
+    /* max-width: 245px;  
+    max-height: 368px; */
 
 }
