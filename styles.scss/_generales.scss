@@ -1,11 +1,17 @@
+@import "fuentes";
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     min-width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 img{
     width: 100%;
@@ -14,15 +20,15 @@ img{
 
 
 /* mobile */
-.navBar {
+.navBar-menu {
     background-color: black;
-    color: whitesmoke;
+    color: $white;
     padding: 20px;
     
 }
 /* tablet */
 @media (min-width: 769px) {
-    .navBar{
+    .navBar-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +39,7 @@ ul{
     list-style: none;
     a{
         text-decoration: none;
-        color: whitesmoke;
+        color: $white;
     }
 }
 .menu {
@@ -69,9 +75,9 @@ ul{
 }
 
 /* mobile */
-.container {
+.footer-container {
     background-color: black;
-    color: whitesmoke;
+    color: $white;
     padding: 20px;
     font-size: small;
     .footerMenu{
@@ -79,17 +85,19 @@ ul{
     justify-content: space-between;
         .footerMenu{
             text-align: end;
+            
         }
+        
     }
     
 }
 @media (min-width: 769px){
-    .container {
+    .footer-container {
         font-size: medium;
     }
 }
 @media (min-width: 1025px){
-    .container {
+    .footer-container {
         font-size: large;
     }
 }

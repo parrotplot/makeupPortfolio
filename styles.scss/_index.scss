@@ -32,8 +32,8 @@
 header {
     background-image: url(../imagenes/hero1.jpg);
     background-size: cover;
-    height: 400px;
-    color: white;
+    height: 100vh;
+    color: $white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +43,7 @@ header {
 /* tablet */
 @media (min-width: 769px){
     header {
-        height: 600px;
+        height: 100vh;
         font-size: medium;
     }
 }
@@ -73,28 +73,3 @@ header {
         font-size: larger;
     }
 }
-
-/* @media (min-width: 769px){
-    .slogan{
-        width: 50%;
-        font-size: large;
-    }
-} */
-
-
-/* button{
-    margin: 1em 0 0 1em;
-    width: 30%;
-    font-family: "Courier New", Courier, monospace;
-    background-color: tomato
-    
-}
-@media (min-width: 769px){
-    button {
-    height: 30px;
-    width: 25%;
-    font-family: "Courier New", Courier, monospace;
-    margin: 2em;
-    background-color: tomato;    
-    }
-} */

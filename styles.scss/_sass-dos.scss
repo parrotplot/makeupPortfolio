@@ -1,0 +1,16 @@
+@each $redes in instagram, youtube{
+    .#{$redes }-icono{
+        .#{$redes }-icono{
+
+        }
+    }
+}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.body{
+    @include sizes(0, 100vh);
+}
