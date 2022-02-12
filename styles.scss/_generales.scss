@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    min-width: min-content;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+
+/* mobile */
+.navBar {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    
+}
+/* tablet */
+@media (min-width: 769px) {
+    .navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+}
+
+ul{
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+}
+.menu {
+    font-size: smaller;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+/* tablet */
+@media (min-width: 481px){
+    .menu{
+        font-size: medium;
+        width: 100%;
+        justify-content: space-around;
+        
+    }
+}
+@media (min-width: 769px){
+    .menu{
+        font-size: large;
+        width: 400px;
+    }
+}
+/* desktop */
+@media (min-width: 1025px){
+    .menu{
+        font-size: larger;
+        width: 500px;
+    }
+}
+
+/* mobile */
+.container {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: small;
+    .footerMenu{
+        display: flex;
+    justify-content: space-between;
+        .footerMenu{
+            text-align: end;
+        }
+    }
+    
+}
+@media (min-width: 769px){
+    .container {
+        font-size: medium;
+    }
+}
+@media (min-width: 1025px){
+    .container {
+        font-size: large;
+    }
+}
+
+/* tablet */
+@media (min-width: 769px){
+    .footer-contact {
+        text-align: center;
+    }
+}

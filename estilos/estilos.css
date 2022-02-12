@@ -22,27 +22,6 @@ img {
   padding: 20px;
 }
 
-.navBar .menu {
-  font-size: smaller;
-  margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
-}
-
-.navBar .menu ul {
-  list-style: none;
-}
-
-.navBar .menu ul a {
-  text-decoration: none;
-  color: whitesmoke;
-}
-
 /* tablet */
 @media (min-width: 769px) {
   .navBar {
@@ -56,6 +35,27 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+ul {
+  list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.menu {
+  font-size: smaller;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
 }
 
 /* tablet */
@@ -80,6 +80,46 @@ img {
   .menu {
     font-size: larger;
     width: 500px;
+  }
+}
+
+/* mobile */
+.container {
+  background-color: black;
+  color: whitesmoke;
+  padding: 20px;
+  font-size: small;
+}
+
+.container .footerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .footerMenu .footerMenu {
+  text-align: end;
+}
+
+@media (min-width: 769px) {
+  .container {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    font-size: large;
+  }
+}
+
+/* tablet */
+@media (min-width: 769px) {
+  .footer-contact {
+    text-align: center;
   }
 }
 
@@ -144,7 +184,6 @@ header {
 
 /* mobile */
 .slogan {
-  /* outline: solid; */
   margin-top: 15%;
   margin-left: 1em;
   width: 50%;
@@ -178,46 +217,6 @@ header {
         font-size: large;
     }
 } */
-/* mobile */
-.container {
-  background-color: black;
-  color: whitesmoke;
-  padding: 20px;
-  font-size: small;
-}
-
-.container .footerMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.container .footerMenu .footerMenu {
-  text-align: end;
-}
-
-@media (min-width: 769px) {
-  .container {
-    font-size: medium;
-  }
-}
-
-@media (min-width: 1025px) {
-  .container {
-    font-size: large;
-  }
-}
-
-/* tablet */
-@media (min-width: 769px) {
-  .footer-contact {
-    text-align: center;
-  }
-}
-
 /* button{
     margin: 1em 0 0 1em;
     width: 30%;

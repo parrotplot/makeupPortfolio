@@ -1,0 +1,52 @@
+/* About Styling */
+
+/* mobile */
+.aboutMe{
+    padding: 1em;
+}
+/* tablet */
+@media (min-width: 481px){
+    .aboutMe{
+        padding: 0%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 0px;
+    }
+}
+/* tablet */
+@media (min-width: 481px) {
+    .patoPic{
+        display: flex;
+        padding: 2em 1em 2em 2em;
+        max-width: 448px;
+        max-height: 620px;
+    }
+}
+@media (min-width: 769px) {
+    .patoPic{
+        padding: 2em 1em 2em 2em;
+        display: flex;
+    }
+}
+/* desktop */
+@media (min-width: 1025px) {
+    .patoPic{
+        max-width: 460px;
+        max-height: 690px;
+    }
+}
+.info{ 
+    text-align: center;
+    margin-top: 1em;
+}
+/* desktop */
+@media (min-width: 769px){
+    .info{
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+}
