@@ -52,6 +52,9 @@ ul a {
   justify-content: space-between;
   list-style: none;
 }
+.menu a:hover {
+  color: whitesmoke;
+}
 
 @media (min-width: 1025px) {
   .menu a:after {
@@ -121,6 +124,10 @@ ul a {
     text-align: center;
   }
 }
+.footerMenu a:hover {
+  color: whitesmoke;
+}
+
 @media (min-width: 1025px) {
   .footerMenu a:after {
     content: "";
@@ -304,7 +311,23 @@ header {
         max-height: 368px; */
   }
 }
+.bg-image {
+  background-image: url(../imagenes/paleta.jpeg);
+  padding: 5em;
+  background-size: cover;
+  background-position: 400px 400px;
+}
+
+.contact-container {
+  padding: 2em;
+}
 .contact-container h1 {
   font-weight: bold;
   text-align: center;
+}
+
+@media (min-width: 769px) {
+  h1 {
+    margin-bottom: 70px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

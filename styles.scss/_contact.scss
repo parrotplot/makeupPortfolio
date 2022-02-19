@@ -1,6 +1,20 @@
+.bg-image {
+  background-image: url(../imagenes/paleta.jpeg);
+  padding: 5em;
+  background-size: cover;
+  background-position: 400px 400px;
+}
+
 .contact-container {
+  padding: 2em;
   h1 {
     font-weight: bold;
     text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  h1 {
+    margin-bottom: 70px;
   }
 }

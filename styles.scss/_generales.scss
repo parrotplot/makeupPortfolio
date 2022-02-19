@@ -48,6 +48,9 @@ ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  a:hover {
+    color: $white;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -55,7 +58,7 @@ ul {
     a:after {
       content: "";
       position: absolute;
-      background-color: tomato;
+      background-color: $orange;
       height: 2px;
       width: 0;
       left: 0;
@@ -63,7 +66,7 @@ ul {
       transition: 0.3s;
     }
     a:hover {
-      color: tomato;
+      color: $orange;
     }
     a:hover:after {
       width: 100%;
@@ -123,12 +126,20 @@ ul {
   }
 }
 
+// mobile
+.footerMenu {
+  a:hover {
+    color: $white;
+  }
+}
+
+// desktop
 @media (min-width: 1025px) {
   .footerMenu {
     a:after {
       content: "";
       position: absolute;
-      background-color: tomato;
+      background-color: $orange;
       height: 2px;
       width: 0;
       left: 0;
@@ -136,7 +147,7 @@ ul {
       transition: 0.3s;
     }
     a:hover {
-      color: tomato;
+      color: $orange;
     }
     a:hover:after {
       width: 100%;
