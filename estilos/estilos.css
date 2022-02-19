@@ -6,20 +6,13 @@
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   min-width: -webkit-min-content;
   min-width: -moz-min-content;
   min-width: min-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
 }
 
@@ -38,22 +31,14 @@ img {
 /* tablet */
 @media (min-width: 769px) {
   .navBar-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
   }
 }
-
 ul {
   list-style: none;
 }
-
 ul a {
   text-decoration: none;
   color: whitesmoke;
@@ -62,12 +47,8 @@ ul a {
 .menu {
   font-size: smaller;
   margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -76,18 +57,15 @@ ul a {
   .menu {
     font-size: medium;
     width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 }
-
 @media (min-width: 769px) {
   .menu {
     font-size: large;
     width: 400px;
   }
 }
-
 /* desktop */
 @media (min-width: 1025px) {
   .menu {
@@ -95,7 +73,6 @@ ul a {
     width: 500px;
   }
 }
-
 /* mobile */
 .footer-container {
   background-color: black;
@@ -103,16 +80,10 @@ ul a {
   padding: 20px;
   font-size: small;
 }
-
 .footer-container .footerMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .footer-container .footerMenu .footerMenu {
   text-align: end;
 }
@@ -122,29 +93,22 @@ ul a {
     font-size: medium;
   }
 }
-
 @media (min-width: 1025px) {
   .footer-container {
     font-size: large;
   }
 }
-
 /* tablet */
 @media (min-width: 769px) {
   .footer-contact {
     text-align: center;
   }
 }
-
 /* mobile */
 .logo .name {
   font-size: x-large;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 /* tablet */
@@ -153,7 +117,6 @@ ul a {
     font-size: xx-large;
   }
 }
-
 /* mobile */
 .logo .artist {
   font-size: medium;
@@ -166,23 +129,15 @@ ul a {
     font-size: larger;
   }
 }
-
 /* mobile */
 header {
   background-image: url(../imagenes/hero1.jpg);
   background-size: cover;
   height: 100vh;
   color: whitesmoke;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   background-position: center;
   font-size: small;
 }
@@ -194,7 +149,6 @@ header {
     font-size: medium;
   }
 }
-
 /* mobile */
 .slogan {
   margin-top: 15%;
@@ -209,13 +163,11 @@ header {
     font-size: small;
   }
 }
-
 @media (min-width: 769px) {
   .slogan {
     font-size: medium;
   }
 }
-
 /* desktop */
 @media (min-width: 1025px) {
   .slogan {
@@ -223,7 +175,6 @@ header {
     font-size: larger;
   }
 }
-
 /* About Styling */
 /* mobile */
 .aboutMe {
@@ -234,38 +185,28 @@ header {
 @media (min-width: 481px) {
   .aboutMe {
     padding: 0%;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 0px;
   }
 }
-
 /* tablet */
 @media (min-width: 481px) {
   .patoPic {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 2em 1em 2em 2em;
     max-width: 448px;
     max-height: 620px;
   }
 }
-
 @media (min-width: 769px) {
   .patoPic {
     padding: 2em 1em 2em 2em;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
-
 /* desktop */
 @media (min-width: 1025px) {
   .patoPic {
@@ -273,7 +214,6 @@ header {
     max-height: 690px;
   }
 }
-
 .info {
   text-align: center;
   margin-top: 1em;
@@ -283,23 +223,14 @@ header {
 @media (min-width: 769px) {
   .info {
     font-size: larger;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
-
 /* Work Styling */
 .grid-container-gallery {
   padding: 2em;
-  display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 96%;
@@ -311,29 +242,22 @@ header {
 /* tablet */
 @media (min-width: 700px) {
   .grid-container-gallery {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 1em;
   }
 }
-
 /* desktop */
 @media (min-width: 1025px) {
   .grid-container-gallery:hover {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 1em;
   }
 }
-
 .grid-gallery-element {
   /* inline-size: 100%;
-    object-fit: cover; */
+  object-fit: cover; */
   /* max-width: 245px;  
-    max-height: 368px; */
-}
-/*# sourceMappingURL=estilos.css.map */
+  max-height: 368px; */
+}/*# sourceMappingURL=estilos.css.map */
