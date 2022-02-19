@@ -36,16 +36,39 @@ img {
 ul {
   list-style: none;
   a {
+    position: relative;
     text-decoration: none;
     color: $white;
   }
 }
+
 .menu {
   font-size: smaller;
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
   list-style: none;
+}
+
+@media (min-width: 1025px) {
+  .menu {
+    a:after {
+      content: "";
+      position: absolute;
+      background-color: tomato;
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -10px;
+      transition: 0.3s;
+    }
+    a:hover {
+      color: tomato;
+    }
+    a:hover:after {
+      width: 100%;
+    }
+  }
 }
 
 /* tablet */
@@ -79,9 +102,7 @@ ul {
   .footerMenu {
     display: flex;
     justify-content: space-between;
-    .footerMenu {
-      text-align: end;
-    }
+    text-align: end;
   }
 }
 @media (min-width: 769px) {
@@ -99,5 +120,26 @@ ul {
 @media (min-width: 769px) {
   .footer-contact {
     text-align: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .footerMenu {
+    a:after {
+      content: "";
+      position: absolute;
+      background-color: tomato;
+      height: 2px;
+      width: 0;
+      left: 0;
+      bottom: -1px;
+      transition: 0.3s;
+    }
+    a:hover {
+      color: tomato;
+    }
+    a:hover:after {
+      width: 100%;
+    }
   }
 }

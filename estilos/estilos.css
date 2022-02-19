@@ -40,6 +40,7 @@ ul {
   list-style: none;
 }
 ul a {
+  position: relative;
   text-decoration: none;
   color: whitesmoke;
 }
@@ -52,6 +53,24 @@ ul a {
   list-style: none;
 }
 
+@media (min-width: 1025px) {
+  .menu a:after {
+    content: "";
+    position: absolute;
+    background-color: tomato;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+  .menu a:hover {
+    color: tomato;
+  }
+  .menu a:hover:after {
+    width: 100%;
+  }
+}
 /* tablet */
 @media (min-width: 481px) {
   .menu {
@@ -83,8 +102,6 @@ ul a {
 .footer-container .footerMenu {
   display: flex;
   justify-content: space-between;
-}
-.footer-container .footerMenu .footerMenu {
   text-align: end;
 }
 
@@ -102,6 +119,24 @@ ul a {
 @media (min-width: 769px) {
   .footer-contact {
     text-align: center;
+  }
+}
+@media (min-width: 1025px) {
+  .footerMenu a:after {
+    content: "";
+    position: absolute;
+    background-color: tomato;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+  }
+  .footerMenu a:hover {
+    color: tomato;
+  }
+  .footerMenu a:hover:after {
+    width: 100%;
   }
 }
 /* mobile */
@@ -255,9 +290,21 @@ header {
     grid-gap: 1em;
   }
 }
-.grid-gallery-element {
-  /* inline-size: 100%;
-  object-fit: cover; */
-  /* max-width: 245px;  
-  max-height: 368px; */
+.grid-gallery-element img {
+  border-radius: 20px;
+}
+
+@media (min-width: 1025px) {
+  .grid-gallery-element:hover {
+    transform: scale(1.08);
+    transition: all 0.5s;
+    /* inline-size: 100%;
+        object-fit: cover; */
+    /* max-width: 245px;  
+        max-height: 368px; */
+  }
+}
+.contact-container h1 {
+  font-weight: bold;
+  text-align: center;
 }/*# sourceMappingURL=estilos.css.map */
