@@ -146,6 +146,14 @@ ul a {
     width: 100%;
   }
 }
+.contact {
+  text-align: center;
+}
+
+.socials {
+  text-align: center;
+}
+
 /* mobile */
 .logo .name {
   font-size: x-large;
@@ -172,7 +180,7 @@ ul a {
   }
 }
 /* mobile */
-header {
+main {
   background-image: url(../imagenes/hero1.jpg);
   background-size: cover;
   height: 100vh;
@@ -186,7 +194,7 @@ header {
 
 /* tablet */
 @media (min-width: 769px) {
-  header {
+  main {
     height: 100vh;
     font-size: medium;
   }
@@ -305,10 +313,6 @@ header {
   .grid-gallery-element:hover {
     transform: scale(1.08);
     transition: all 0.5s;
-    /* inline-size: 100%;
-        object-fit: cover; */
-    /* max-width: 245px;  
-        max-height: 368px; */
   }
 }
 .bg-image {

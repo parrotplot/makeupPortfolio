@@ -1,75 +1,73 @@
-
-
 /* mobile */
-.logo{ 
-    .name{
+.logo {
+  .name {
     font-size: x-large;
     display: flex;
     justify-content: center;
-    }
+  }
 }
 /* tablet */
-@media (min-width: 769px){
-    .logo .name {
-        font-size: xx-large;
-    }
+@media (min-width: 769px) {
+  .logo .name {
+    font-size: xx-large;
+  }
 }
 /* mobile */
-.logo{ 
-    .artist {
-        font-size: medium;
-        text-align: center;
-    }
+.logo {
+  .artist {
+    font-size: medium;
+    text-align: center;
+  }
 }
 /* tablet */
-@media (min-width: 769px){
-    .logo .artist {
-        font-size: larger;
-    }
+@media (min-width: 769px) {
+  .logo .artist {
+    font-size: larger;
+  }
 }
 
 /* mobile */
-header {
-    background-image: url(../imagenes/hero1.jpg);
-    background-size: cover;
+main {
+  background-image: url(../imagenes/hero1.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  font-size: small;
+}
+/* tablet */
+@media (min-width: 769px) {
+  main {
     height: 100vh;
-    color: $white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-position: center;
-    font-size: small;
-}
-/* tablet */
-@media (min-width: 769px){
-    header {
-        height: 100vh;
-        font-size: medium;
-    }
+    font-size: medium;
+  }
 }
 
 /* mobile */
-.slogan{
-    margin-top: 15%;
-    margin-left: 1em;
-    width: 50%;
-    font-size: smaller;
+.slogan {
+  margin-top: 15%;
+  margin-left: 1em;
+  width: 50%;
+  font-size: smaller;
 }
 /* tablet */
-@media (min-width: 481px){
-    .slogan{
-        font-size: small;
-    }
+@media (min-width: 481px) {
+  .slogan {
+    font-size: small;
+  }
 }
-@media (min-width: 769px){
-    .slogan{
-        font-size: medium;
-    }
+@media (min-width: 769px) {
+  .slogan {
+    font-size: medium;
+  }
 }
 /* desktop */
-@media (min-width: 1025px){
-    .slogan{
-        width: 40%;
-        font-size: larger;
-    }
+@media (min-width: 1025px) {
+  .slogan {
+    width: 40%;
+    font-size: larger;
+  }
 }
