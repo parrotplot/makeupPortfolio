@@ -243,6 +243,10 @@ main {
   }
 }
 /* tablet */
+.patoPic img {
+  border-radius: 20px;
+}
+
 @media (min-width: 481px) {
   .patoPic {
     display: flex;
@@ -278,6 +282,10 @@ main {
     justify-content: center;
   }
 }
+.paragraph {
+  padding: 1em;
+}
+
 /* Work Styling */
 .grid-container-gallery {
   padding: 2em;
@@ -334,4 +342,9 @@ main {
   h1 {
     margin-bottom: 70px;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+.tutorials {
+  text-align: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */
